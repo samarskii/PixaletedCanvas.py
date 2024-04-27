@@ -35,13 +35,13 @@
 6. Alternatively, you can manually run script.py by uncommenting the last part of the code and specifying different settings:
   - Open `script.py` in a text editor.
   - Uncomment the last part of the code (e.g., remove the # symbols).
-  - Modify the generate_images() function call with your desired settings, such as the number of images, width, height, and rule index.
+  - Run the last `for` look with your desired settings, such as the number of images, width, height, and rule index.
   - Save the changes and run `script.py` directly:
-           ` python script.py` This allows you to generate a large number of images in a batch, for example, generating 1,000,000 images in a row with specific sizes and rules.
+           ` python script.py`. This allows you to generate a large number of images in a batch, for example, generating 1,000,000 images in a row with specific sizes and rules.
 
-Note: Be cautious when generating a large number of images, as it may take a considerable amount of time and consume significant system resources.
+Note: Be cautious when generating a large number of images, as it may take a considerable amount of time and consume significant system resources but on average one image betwen 10-30 kB at max.
 
-Note: GIF generation using gif_script.py can take a long time, especially for a large number of images. If you encounter issues or find the process too time-consuming, you can alternatively use different scripts or websites for GIF creation, such as https://ezgif.com/maker, which provides an online tool for creating GIFs from a set of images.
+Note: GIF generation using gif_script.py can take a long time, especially for a large number of images. If you encounter issues or find the process too time-consuming, you can alternatively use different scripts or websites for GIF creation, such as https://ezgif.com/maker, which provides an online tool for creating GIFs from a set of images with multiple settings.
 
 ## Showcase
 
