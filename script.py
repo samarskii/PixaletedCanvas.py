@@ -733,43 +733,43 @@ def generate_images(amount, width, height, rule_index):
 # width_height = [(31, 17), (62, 34), (93, 51), (124, 68)]
 
 
-rules = [rule1]
-width_height = [(16, 16)]
+# rules = [rule2]
+# width_height = [(16, 16)]
 
 
-# Generate any amount of images with different rules and sizes
-for i in range(10):
-    # Choose a random rule
-    rule = random.choice(rules)
+# # Generate any amount of images with different rules and sizes
+# for i in range(10):
+#     # Choose a random rule
+#     rule = random.choice(rules)
     
-    # rule = rules[0] # Coose a single rule
+#     # rule = rules[0] # Coose a single rule
     
-    # Choose a set of sizes randomly
-    size = random.choice(width_height)
-    width = size[0]
-    height = size[1]
+#     # Choose a set of sizes randomly
+#     size = random.choice(width_height)
+#     width = size[0]
+#     height = size[1]
     
-    # Or put the width and size manually
-    # width = 62
-    # size = 34
+#     # Or put the width and size manually
+#     # width = 62
+#     # size = 34
 
-    # Create a new canvas
-    canvas = create_background_canvas(width, height, 'white')
+#     # Create a new canvas
+#     canvas = create_background_canvas(width, height, 'white')
     
-    # Apply the chosen rule
-    rule(canvas)
+#     # Apply the chosen rule
+#     rule(canvas)
 
-    # Apply the scaling rule if needed
-    scale_factor = round(1980 / width)  # Adjust the scale factor as needed for FULL HD size
-    canvas = canvas.resize((canvas.width * scale_factor, canvas.height * scale_factor), resample=Image.NEAREST)
+#     # Apply the scaling rule if needed
+#     scale_factor = round(1980 / width)  # Adjust the scale factor as needed for FULL HD size
+#     canvas = canvas.resize((canvas.width * scale_factor, canvas.height * scale_factor), resample=Image.NEAREST)
 
-    # Generate a unique filename
-    rule_index = rules.index(rule) + 1  # Rules are indexed from 1
-    unique_number = random.randint(1, 9999)
-    filename = f"{unique_number}_{width}x{height}_{rule_index}.png"
-    output_path = os.path.join(output_dir, filename)
+#     # Generate a unique filename
+#     rule_index = rules.index(rule) + 1  # Rules are indexed from 1
+#     unique_number = random.randint(1, 9999)
+#     filename = f"{unique_number}_{width}x{height}_{rule_index}.png"
+#     output_path = os.path.join(output_dir, filename)
 
-    # Save the image
-    canvas.save(output_path)
-    print(f"Image '{filename}' saved successfully.")
+#     # Save the image
+#     canvas.save(output_path)
+#     print(f"Image '{filename}' saved successfully.")
     
