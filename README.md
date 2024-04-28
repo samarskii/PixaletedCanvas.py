@@ -4,7 +4,7 @@
 [![Pillow Version](https://img.shields.io/badge/pillow-9.5.0-yellow)](https://pillow.readthedocs.io/)
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
-**PixelatedCanvas.py** is my Python pet-project that generates stunning pixel backgrounds using various rules and sizes. It's like having a virtual art studio where you can unleash your creativity and create mesmerizing pixel masterpieces! 🎉✨
+**PixelatedCanvas.py** is my Python pet-project that generates pixel backgrounds using various rules and sizes. It is an attempt to implement some interesting alghoritms for pattern drawing and filling! 🎉✨
 
 ## Features
 
