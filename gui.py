@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-import script
+import scriptRGBpng
 from PIL import Image, ImageTk
 
 window = tk.Tk()
@@ -63,15 +63,15 @@ def generate_images():
     width, height = size
     rule_index = rule_dropdown.current()
 
-    script.generate_images(amount, width, height, rule_index)
+    scriptRGBpng.generate_images(amount, width, height, rule_index)
 
     for i in range(amount):
-        canvas = script.create_background_canvas(width, height, 'white')
-        script.rules[rule_index](canvas)
+        canvas = scriptRGBpng.create_background_canvas(width, height, 'white')
+        scriptRGBpng.rules[rule_index](canvas)
         scale_factor = round(1980 / width)
-        canvas = canvas.resize((canvas.width * scale_factor, canvas.height * scale_factor), resample=script.Image.NEAREST)
+        canvas = canvas.resize((canvas.width * scale_factor, canvas.height * scale_factor), resample=scriptRGBpng.Image.NEAREST)
         filename = f"{i+1}_{width}x{height}_{rule_index+1}.png"
-        output_path = script.os.path.join(script.output_dir, filename)
+        output_path = scriptRGBpng.os.path.join(scriptRGBpng.output_dir, filename)
         canvas.save(output_path)
         print(f"Image '{filename}' saved successfully.")
 
